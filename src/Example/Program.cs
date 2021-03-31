@@ -20,7 +20,7 @@ namespace Example
 
             //create new hotkeys
             ahk.ExecRaw("^a::Send, Hello World");
-            
+
             //programmatically set variables
             ahk.SetVar("x", "1");
             ahk.SetVar("y", "4");
@@ -68,7 +68,7 @@ namespace Example
             });
 
             //the initalize pipes module only needs to be called once per application
-            ahk.InitalizePipesModule(ipcHandler); 
+            ahk.InitalizePipesModule(ipcHandler);
 
             ahk.ExecRaw(@"serverResponce := SendPipeMessage(""Hello from ahk"")
                           MsgBox, responce from server was -- %serverResponce% ");

@@ -56,7 +56,7 @@ namespace AutoHotkey.Interop.Tests.Util
         [Fact]
         public void returns_null_on_partial_folder_name() {
             //not Util/file.txt
-            string found = EmbededResourceHelper.FindByName(TestAssembly, "til/file.txt"); 
+            string found = EmbededResourceHelper.FindByName(TestAssembly, "Util/file.txt"); 
             Assert.Null(found);
         }
 
